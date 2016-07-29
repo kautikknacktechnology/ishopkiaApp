@@ -1,0 +1,77 @@
+<ion-view can-swipe-back="false">
+<div class="page">
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="section-title">log in</h1>
+        </div>
+        <div class="content">
+            <div class="cms-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="login-title">
+                                <img src="images/ishop.png" alt="" />
+                                <h4>Hello, welcome to your account</h4>
+                            </div>
+                            <form class="login" id="login">
+                                <div class="group">
+                                    <input type="text" class="loginField">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="loginLabel">Mobile No. or Email</label>
+                                </div>
+                                <div class="group">
+                                    <input type="password" class="loginField">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="loginLabel">Your Password</label>
+                                </div>
+                                <div class="group">
+                                    <div class="switch">
+                                        <input type="checkbox" id="c1" />
+                                        <label for="c1"></label>
+                                        <span>Remember Me</span>
+                                    </div>
+                                </div>
+                                <div class="group actionBtn">
+                                    <a href="#" class="signInBtn">Sign In</a>
+                                    <a class="fgPassBtn" data-toggle="modal" href="#forgotPasswordModal">Forgot Password?</a>
+                                </div>
+                            </form>
+                            <div class="not-registered text-center">
+                                Havent Registered? <a href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="forgotPasswordModal" class="modal fade forgotPasswordModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title" style="color:#e21b18;">Forgot Password</h3>
+            </div>
+            <div class="modal-body">
+                <small class="text-uppercase">Hi,We will send Password to Your Mobile and E-mail.</small>
+                <form>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="Mobile No. or email" name="forgot_p" id="id_forgot_p" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="fgPassBtn">Get Password</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+</ion-view>
+
