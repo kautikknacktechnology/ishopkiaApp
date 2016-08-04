@@ -1,0 +1,123 @@
+<ion-view  view-title="welcome" can-swipe-back="false">
+    <ion-content>
+        <div class="page">
+            <div class="wrapper">
+                <div class="header">
+                    <h1 class="section-title">Create New Account</h1>
+                </div>
+                <div class="content">
+                    <div class="cms-section section-padding">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="login-title">
+                                        <h4>Create Your Account on ishopkia</h4>
+                                    </div>
+                                    <form ng-submit="doSignup(userForm)" class="login" id="login" name="userForm" novalidate>
+                                        <div class="group">
+                                            <input type="text" class="loginField" name="uname" ng-model="signupData.uname" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Nick Name</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="text" class="loginField" name="fname" ng-model="signupData.fname" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Full Name</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="email" class="loginField" name="email" ng-model="signupData.email" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Email</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="password" class="loginField" name="pass" ng-model="signupData.pass" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Password</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="password" class="loginField" name="repass" ng-model="signupData.repass" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Re-enter Password</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="text" class="loginField" name="mobile" ng-model="signupData.mobile" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Mobile No.</label>
+                                        </div>
+                                        <div class="group">
+                                            <input type="text" class="loginField" name="city" ng-model="signupData.city" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter City Name</label>
+                                        </div>
+                                        <div class="group">
+                                            <select required="" name="state" tabindex="8" class="form-control" data-placeholder="Select a State" aria-required="true" name="state" ng-model="signupData.state" required>
+                                                <option value="">Select State</option>
+                                                <option value="AN">Andaman and Nicobar Islands</option>
+                                                <option value="AP">Andhra Pradesh</option>
+                                                <option value="AR">Arunachal Pradesh</option>
+                                                <option value="AS">Assam</option>
+                                                <option value="BR">Bihar</option>
+                                                <option value="CH">Chandigarh</option>
+                                                <option value="CT">Chhattisgarh</option>
+                                                <option value="DN">Dadra and Nagar Haveli</option>
+                                                <option value="DD">Daman and Diu</option>
+                                                <option value="DL">Delhi</option>
+                                                <option value="GA">Goa</option>
+                                                <option value="GJ">Gujarat</option>
+                                                <option value="HR">Haryana</option>
+                                                <option value="HP">Himachal Pradesh</option>
+                                                <option value="JK">Jammu and Kashmir</option>
+                                                <option value="JH">Jharkhand</option>
+                                                <option value="KA">Karnataka</option>
+                                                <option value="KL">Kerala</option>
+                                                <option value="LD">Lakshadweep</option>
+                                                <option value="MP">Madhya Pradesh</option>
+                                                <option value="MH">Maharashtra</option>
+                                                <option value="MN">Manipur</option>
+                                                <option value="ML">Meghalaya</option>
+                                                <option value="MZ">Mizoram</option>
+                                                <option value="NL">Nagaland</option>
+                                                <option value="OR">Odisha</option>
+                                                <option value="PY">Puducherry</option>
+                                                <option value="PB">Punjab</option>
+                                                <option value="RJ">Rajasthan</option>
+                                                <option value="SK">Sikkim</option>
+                                                <option value="TN">Tamil Nadu</option>
+                                                <option value="AP">Telangana</option>
+                                                <option value="TR">Tripura</option>
+                                                <option value="UP">Uttar Pradesh</option>
+                                                <option value="UT">Uttarakhand</option>
+                                                <option value="WB">West Bengal</option>
+                                            </select>
+                                        </div>
+                                        <div class="group">
+                                            <input type="text" class="loginField" name="pincode" ng-model="signupData.pincode" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="loginLabel">Enter Pincode</label>
+                                        </div>
+      
+                                        <div class="group actionBtn">
+                                            <a ng-click="submitForm()" class="signInBtn">Sign Up</a>
+                                        </div>
+
+                                    </form>
+                                    <div class="not-registered text-center">
+                                        Already Registered? <a ui-sref="login">Log In</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

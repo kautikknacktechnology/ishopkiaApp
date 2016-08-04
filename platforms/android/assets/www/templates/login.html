@@ -20,7 +20,7 @@
                                             <input type="text" name="name" class="loginField" ng-model="loginData.name" required>
                                             <span class="highlight"></span>
                                             <span class="bar"></span>
-                                            <label class="loginLabel">Mobile No. or Email</label>
+                                            <label class="loginLabel" ng-if="!loginData.name">Mobile No. or Email</label>
                                             <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You Mobile No. or Email is required.</p>
                                         </div>
 
@@ -28,7 +28,7 @@
                                             <input type="password" name="password" class="loginField" ng-model="loginData.password" required>
                                             <span class="highlight"></span>
                                             <span class="bar"></span>
-                                            <label class="loginLabel">Your Password</label>
+                                            <label class="loginLabel" ng-if="!loginData.password">Your Password</label>
                                             <p ng-show="userForm.password.$invalid && !userForm.password.$pristine" class="help-block">You Password is required.</p>
                                         </div>
 
@@ -40,13 +40,13 @@
                                             </div>
                                         </div>
                                         <div class="group actionBtn">
-                                            <a ng-click="submitForm()" href="#" class="signInBtn" ng-disabled="userForm.$invalid">Sign In</a>
+                                            <a  ng-click="submitForm()" class="signInBtn" ng-disabled="userForm.$invalid">Sign In</a>
                                            <!--  <button class="button button-block button-positive  " type="submit">Sign Up</button> -->
                                             <a class="fgPassBtn" data-toggle="modal" href="#forgotPasswordModal">Forgot Password?</a>
                                         </div>
                                     </form>
                                     <div class="not-registered text-center">
-                                        Havent Registered? <a href="#">Sign Up</a>
+                                        Havent Registered? <a ui-sref="register">Sign Up</a>
                                     </div>
                                 </div>
                             </div>
